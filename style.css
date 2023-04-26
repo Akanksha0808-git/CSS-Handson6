@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/shara\ desert.jpg);
+    /* background-size: cover; */
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img {
+    height: 60px;
+    margin-top: 20px;
+    filter: drop-shadow(10px 10px 5px gray);
+}
+
+.navbar {
+    display: flex;
+    margin-left: 372px;
+    margin-top: 30px;
+}
+
+.navbar-menu {
+    color: white;
+    cursor: pointer;
+
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px 40px;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    position: relative;
+}
+
+.left-container {
+    margin-top: 200px;
+    position: absolute;
+    left: 100px;
+}
+
+.left-container h1 {
+    font-size: 90px;
+    color: white;
+
+}
+
+.left-container p {
+    font-size: 20px;
+    color: white;
+}
+
+.left-container button {
+    height: 40px;
+    width: 190px;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 30px;
+}
+
+.right-container {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 30px;
+    column-gap: 50px;
+    position: absolute;
+    right: 210px;
+    top: 50px;
+}
+
+.box {
+    height: 210px;
+    width: 210px;
+    border: 2px solid rgb(135, 129, 129);
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.box:hover {
+    transform: translateY(-15px);
+}
+
+.box1 {
+    background-image: url(./img/pic-1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.western {
+    padding-left: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.lorem {
+    color: white;
+    padding-left: 25px;
+    font-size: 14px;
+}
+
+.box2 {
+    background-image: url(./img/pic-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box3 {
+    background-image: url(./img/pic-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box4 {
+    background-image: url(./img/pic-4.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* tablet view */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .container-2 {
+        flex-direction: column;
+    }
+
+    .left-container {
+        margin-bottom: 1400px;
+    }
+
+    .left-container h1 {
+        font-size: 60px;
+    }
+
+    .left-container button {
+        font-size: 20px;
+        width: 300px;
+        height: 70px;
+        border-radius: 50px;
+    }
+
+    .right-container {
+        position: relative;
+        top: 360px;
+        right: 440px;
+        grid-template-columns: 20px;
+        justify-content: center;
+    }
+
+    .box {
+        width: 870px;
+        height: 350px;
+        border-radius: 20px;
+        border: none;
+    }
+}
+
+/* mobile view  */
+@media screen and (min-width:400px) and (max-width:700px) {
+    .container-1 {
+        position: relative;
+    }
+
+    .navbar {
+        margin-top: 10px;
+        margin-right: 290px;
+    }
+
+    .logo {
+        padding-left: 390px;
+    }
+
+    .navbar {
+        position: inherit;
+        top: 0px;
+        right: 100px;
+    }
+    ul li {
+        display: block;
+    }
+    .container-2 {
+        flex-direction: column;
+    }
+
+    .left-container {
+        top: -267px;
+        margin-left: -70px
+    }
+
+    .left-container h1 {
+        font-size: 40px;
+    }
+
+    .right-container {
+        margin-top: 199px;
+        margin-left: 700px;
+        grid-template-columns: auto;
+    }
+
+    .box {
+        width: 300px;
+        height: 300px;
+    }
+}
