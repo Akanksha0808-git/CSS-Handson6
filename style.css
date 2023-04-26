@@ -181,13 +181,13 @@ ul li {
     }
 
     .logo {
-        padding-left: 390px;
+        padding-left: 479px;
     }
 
     .navbar {
         position: inherit;
         top: 0px;
-        right: 100px;
+        right: 199px;
     }
     ul li {
         display: block;
@@ -206,9 +206,9 @@ ul li {
     }
 
     .right-container {
-        margin-top: 199px;
-        margin-left: 700px;
+        margin-top: 226px;
         grid-template-columns: auto;
+        margin-right: -108px;
     }
 
     .box {
